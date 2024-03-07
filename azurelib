@@ -3275,7 +3275,7 @@ function library:CreateWindow(name, size, hidebutton)
 		function tab:CreateConfigSystem(name, side)
 			local configsystem = {}
 
-			configsystem.configFolder = window.name .. " / " .. game["PlaceId"]
+			configsystem.configFolder = game.PlaceId
 			if (not isfolder(configsystem.configFolder)) then
 				makefolder(configsystem.configFolder)
 			end
