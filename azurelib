@@ -3276,9 +3276,7 @@ function library:CreateWindow(name, size, hidebutton)
 			local configsystem = {}
 
 			configsystem.configFolder = "zenoontop"
-			if (not isfolder(configsystem.configFolder)) then
 				makefolder(configsystem.configFolder)
-			end
 
 			configsystem.sector = tab:CreateSector(name or "Config System", side or "left")
 
